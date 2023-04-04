@@ -40,7 +40,7 @@
             g.triangle(sym, size4);*/
 
             //3
-            Console.WriteLine("Task 3");
+            /*Console.WriteLine("Task 3");
             int ran1, ran2, n;
             Console.WriteLine("Enter range: ");
             ran1 = int.Parse(Console.ReadLine());
@@ -55,7 +55,18 @@
                 }
             } while (n < ran1 || n > ran2);
             CorrecrNum.cornum g = new CorrecrNum.cornum();
-            g.game(ran1, ran2, n);
+            g.game(ran1, ran2, n);*/
+
+            //4
+            Console.WriteLine("Task 4");
+            Console.Write("Number of vowels: ");
+            int gol = int.Parse(Console.ReadLine());
+            Console.Write("Number of consonants: ");
+            int pr = int.Parse(Console.ReadLine());
+            Console.Write("Length of words: ");
+            int len = int.Parse(Console.ReadLine());
+            PseudoText.pseudotext h = new PseudoText.pseudotext();
+            h.text(gol, pr, len);
         }
     }
 }
