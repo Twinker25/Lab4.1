@@ -19,7 +19,7 @@
             d.fib(end);*/
 
             //2
-            Console.WriteLine("Task 2");
+            /*Console.WriteLine("Task 2");
             string sym;
             Console.Write("Enter symbol to paint figure: ");
             sym = Console.ReadLine();
@@ -37,7 +37,25 @@
             Console.Write("\nEnter size of triangle: ");
             int size4 = int.Parse(Console.ReadLine());
             Triangle.figure g = new Triangle.figure();
-            g.triangle(sym, size4);
+            g.triangle(sym, size4);*/
+
+            //3
+            Console.WriteLine("Task 3");
+            int ran1, ran2, n;
+            Console.WriteLine("Enter range: ");
+            ran1 = int.Parse(Console.ReadLine());
+            ran2 = int.Parse(Console.ReadLine());
+            do
+            {
+                Console.Write("Enter your number: ");
+                n = int.Parse(Console.ReadLine());
+                if (n < ran1 || n > ran2)
+                {
+                    Console.WriteLine("This number is outside the range!!!");
+                }
+            } while (n < ran1 || n > ran2);
+            CorrecrNum.cornum g = new CorrecrNum.cornum();
+            g.game(ran1, ran2, n);
         }
     }
 }
